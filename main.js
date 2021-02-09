@@ -11,7 +11,7 @@ function Mymousedown(e){
 canvas.addEventListener("mousemove", Mymousemove_is_a_superhero);
 function Mymousemove_is_a_superhero(e){
     var current_x_position = e.clientX-canvas.offsetLeft;
-    var current_y_position = e.clientX-canvas.offsetTop;
+    var current_y_position = e.clientY-canvas.offsetTop;
     if (mouse_event == "mousedown"){
         ctx.beginPath();
         ctx.strokeStyle = color;
